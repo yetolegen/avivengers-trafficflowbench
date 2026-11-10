@@ -1,0 +1,22 @@
+{
+  "id": "yetolegen/sub-final-v10",
+  "title": "sub-final-v10",
+  "code_file": "sub-final-v10.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "yetolegen/task-4",
+    "yetolegen/task-2-onset",
+    "yetolegen/task-1-v2"
+  ],
+  "competition_sources": [
+    "2026-ieee-big-data-traffic-flow-bench"
+  ],
+  "model_sources": []
+}

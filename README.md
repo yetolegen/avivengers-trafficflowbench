@@ -12,11 +12,16 @@ Final pipeline: Task 1 CatBoost (task-1-v2), Task 2 onset model (task-2-onset), 
 
 ## Reproduce the final submission (sub-final v10)
 
-Run on Kaggle with the competition data attached (internet on, GPU T4 for Task 1). Python 3.12, lightgbm, catboost, pandas, numpy, pyarrow.
+Entry script: `python run_all.py` (`--dry-run` only prints the steps).
 
-1. `kaggle_pull/task-1-v2/task-1-v2.ipynb` builds `state.csv` (Task 1).
-2. `kaggle_pull/task-2-onset/task-2-onset.ipynb` builds `queue.csv` (Task 2). It needs `notebooks/t2lib_clean.py` as an input file.
-3. Task 4 notebook (`notebooks/task4_v2.ipynb`) builds `odme.csv`.
-4. `kaggle_pull/sub-final/sub-final.ipynb` applies the Task 3 density step (`notebooks/31_t3_density_cell.py`, variant A), merges the three files and runs the format checks. Output: `submission.csv`.
+Environment: Python 3.12 with the `kaggle` CLI (2.0.0 or newer) and a Kaggle API token in `~/.kaggle`. The heavy work runs on Kaggle (competition data attached, internet on, GPU T4 for Task 1). Inside the notebooks: lightgbm, catboost, pandas, numpy, pyarrow.
+
+What it does, in order (each folder in `kaggle_pull/` holds the notebook and its `kernel-metadata.json`):
+1. `task-1-v2`: Task 1 state file (`state.csv`).
+2. `task-2-onset`: Task 2 queue file (`queue.csv`). It reads `t2lib.py` from the output of the earlier kernels `task-2-final` and `task-1`, which must already be completed on the account (the script checks this).
+3. `task-4`: Task 4 file (`odme.csv`).
+4. `sub-final-v10`: applies the Task 3 density step (variant A, same code as `notebooks/31_t3_density_cell.py`), merges the three files with the organizers' `merge_submissions.py`, checks the format and writes `submission.csv`, which the script downloads to `final_output/`.
+
+Limits: the kernel ids point to the team account `yetolegen`, so another account has to change `USER` in `run_all.py` and the `id` and `kernel_sources` in each `kernel-metadata.json`. Task 1 takes several hours on the GPU. The run was not repeated end to end after the competition closed.
 
 The report is in `report/Avivengers_TrafficFlowBench_Report.pdf`.
