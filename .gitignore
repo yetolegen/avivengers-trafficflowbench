@@ -1,0 +1,6 @@
+~$*
+*.parquet
+*.csv.gz
+kaggle_out/
+public_nb/
+__pycache__/

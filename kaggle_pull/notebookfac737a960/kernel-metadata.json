@@ -1,0 +1,24 @@
+{
+  "id": "yetolegen/notebookfac737a960",
+  "id_no": 142555246,
+  "title": "notebookfac737a960",
+  "code_file": "notebookfac737a960.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "yetolegen/task-2-final",
+    "yetolegen/task-1"
+  ],
+  "competition_sources": [
+    "2026-ieee-big-data-traffic-flow-bench"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:0717e81990be591f8c5f98f033d29ab23e9ffde057e5b3a6bd4371f93969e962",
+  "machine_shape": "None"
+}

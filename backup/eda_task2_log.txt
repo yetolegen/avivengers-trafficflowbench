@@ -1,0 +1,105 @@
+=================== TASK 2 EDA ===================
+20.3s 962 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+20.3s 963 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+20.4s 964 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+20.4s 965 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+20.5s 966 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+20.5s 967 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+20.6s 968 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+20.6s 969 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+20.7s 970 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+20.7s 971 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+20.8s 972 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+20.8s 973 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+20.9s 974 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+20.9s 975 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+21.0s 976 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+21.1s 977 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+21.1s 978 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+21.1s 979 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+21.2s 980 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+21.3s 981 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+21.4s 982 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+21.4s 983 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+21.5s 984 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+21.5s 985 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+21.6s 986 
+21.6s 987 WINDOWS BY SPLIT AND CONDITION
+21.6s 988 n  days  hour_min  hour_med  hour_max
+21.6s 989 split      cond
+21.6s 990 private    queue_ongoing  40    13      6.33     15.29     21.58
+21.6s 991 queue_onset    40     8      4.75      9.17     14.58
+21.6s 992 train      queue_ongoing  40    13      7.50     16.54     19.58
+21.6s 993 queue_onset    40     9      4.67      9.75     14.58
+21.6s 994 validation queue_ongoing  40    11      6.58     15.75     20.17
+21.6s 995 queue_onset    40     6      4.67      9.17     16.33
+21.6s 996 dow                       0  1  2   3  4  5  6
+21.6s 997 split      cond
+21.6s 998 private    queue_ongoing  3  7  6  11  6  5  2
+21.6s 999 queue_onset    3  7  9   8  6  6  1
+21.6s 1000 train      queue_ongoing  8  7  5   5  1  6  8
+21.6s 1001 queue_onset    8  9  5   1  1  7  9
+21.6s 1002 validation queue_ongoing  9  9  5   3  0  9  5
+21.6s 1003 queue_onset    9  8  6   0  1  8  8
+64.4s 1004 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+64.4s 1005 D12_I5_N links 258 train onset events (fit days) 174
+85.9s 1006 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+85.9s 1007 D12_I5_S links 100 train onset events (fit days) 186
+112.7s 1008 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+112.7s 1009 D7_I10_E links 146 train onset events (fit days) 181
+135.4s 1010 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+135.4s 1011 D7_I10_W links 107 train onset events (fit days) 85
+183.2s 1012 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+183.2s 1013 D7_I210_E links 297 train onset events (fit days) 177
+202.3s 1014 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+202.3s 1015 D7_I210_W links 81 train onset events (fit days) 251
+258.5s 1016 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+258.5s 1017 D7_I405_N links 352 train onset events (fit days) 256
+280.7s 1018 [origin] x: candidate column 'forecast_origin': agreement with template-derived T = 1.0000
+280.7s 1019 D7_I405_S links 109 train onset events (fit days) 178
+280.7s 1020 
+280.7s 1021 SHIPPED ONSET WINDOWS (40): the cells that are queued at T+30
+280.7s 1022 n_true    span  growth_T45  growth_T60  prior_pct_mean  prior_zero_share  iou_top1  iou_top2  iou_top3  iou_top5  iou_top8  iou_topn
+280.7s 1023 count  40.000  40.000      40.000      40.000          39.000            39.000    40.000    40.000    40.000    40.000    40.000    40.000
+280.7s 1024 mean    3.100   5.200       4.250       5.625           0.031             0.006     0.297     0.323     0.374     0.392     0.340     0.572
+280.7s 1025 std     1.905   6.843       2.985       3.585           0.033             0.040     0.346     0.286     0.297     0.260     0.211     0.392
+280.7s 1026 min     0.000   0.000       0.000       0.000           0.003             0.000     0.000     0.000     0.000     0.000     0.000     0.000
+280.7s 1027 25%     2.000   2.000       2.000       4.000           0.009             0.000     0.000     0.107     0.150     0.200     0.125     0.186
+280.7s 1028 50%     3.000   3.000       3.500       5.000           0.021             0.000     0.208     0.268     0.333     0.400     0.250     0.633
+280.7s 1029 75%     4.000   5.250       6.000       7.250           0.034             0.000     0.500     0.500     0.542     0.600     0.500     1.000
+280.7s 1030 max     8.000  36.000      12.000      14.000           0.163             0.250     1.000     1.000     1.000     0.800     0.750     1.000
+280.7s 1031 
+280.7s 1032 per panel mean:
+280.7s 1033 n_true  span  growth_T60  prior_pct_mean  iou_top3  iou_topn
+280.7s 1034 panel
+280.7s 1035 D12_I5_N      2.4   2.6         9.0           0.012     0.533     0.467
+280.7s 1036 D12_I5_S      3.0   9.6         4.6           0.034     0.433     0.438
+280.7s 1037 D7_I10_E      4.8   6.2         4.0           0.029     0.298     0.619
+280.7s 1038 D7_I10_W      1.0   1.0         4.6           0.009     0.333     1.000
+280.7s 1039 D7_I210_E     3.8   4.4         3.6           0.011     0.490     0.660
+280.7s 1040 D7_I210_W     2.2   2.4         3.8           0.061     0.250     0.300
+280.7s 1041 D7_I405_N     3.0   5.2         5.6           0.036     0.467     0.829
+280.7s 1042 D7_I405_S     4.6  10.2         9.8           0.060     0.190     0.263
+280.7s 1043 
+280.7s 1044 HOUR OF DAY: shipped onset windows [0, 4, 10, 11, 15, 0, 0, 0] | all train-day onset events [0, 205, 369, 441, 456, 12, 5, 0]
+280.7s 1045 
+280.7s 1046 SHIPPED ONGOING WINDOWS (40): queue size and movement
+280.7s 1047 n_Tm5     n_T5    n_T15    n_T30  tail_shift  head_shift  iou_persist_T5  iou_persist_T30
+280.7s 1048 count   40.000   40.000   40.000   40.000      34.000      34.000          40.000           40.000
+280.7s 1049 mean    27.050   27.675   26.500   25.175      -1.706       8.647           0.556            0.354
+280.7s 1050 std     39.951   39.728   35.439   32.125      26.669      45.520           0.195            0.205
+280.7s 1051 min      2.000    1.000    1.000    0.000    -101.000     -66.000           0.000            0.000
+280.7s 1052 25%      4.000    4.000    4.000    5.000      -2.750      -0.750           0.500            0.253
+280.7s 1053 50%     11.000   13.500   13.000   16.500       0.000       0.000           0.616            0.400
+280.7s 1054 75%     27.000   27.000   26.250   27.750       1.750       1.000           0.664            0.507
+280.7s 1055 max    186.000  179.000  154.000  141.000      44.000     238.000           1.000            0.667
+280.7s 1056 share growing / same / shrinking at T+30 vs T-5: 0.525 0.0 0.475
+280.7s 1057 ongoing with tail moving upstream (shift<0): 0.4 head moving downstream (shift>0): 0.275
+284.2s 1058 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+284.2s 1059 cells[i][c] = re.sub('\\\\\|', '|', cell)
+284.4s 1060 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+284.4s 1061 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+285.4s 1062 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+285.5s 1063 [NbConvertApp] Writing 75625 bytes to __notebook__.ipynb
+288.8s 1064 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+289.5s 1065 [NbConvertApp] Writing 416801 bytes to __results__.html
